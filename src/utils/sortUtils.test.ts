@@ -1,6 +1,7 @@
 // src/utils/sortUtils.test.ts
 import { describe, it, expect } from "vitest";
-import { makeComparator, parseCriteriaParam, SortCriterion, Client } from "./sortUtils";
+import { makeComparator, parseCriteriaParam } from "./sortUtils";
+import type { SortCriterion, Client } from "./sortUtils";
 
 const SAMPLE: Client[] = [
   { id: "1", name: "Alice", email: "a@x", createdAt: "2024-01-01", updatedAt: "2024-06-01", status: "Active" },

@@ -145,7 +145,6 @@ function AddClientModal({
   const [createdAt, setCreatedAt] = useState<string>(() => {
     // default to current local datetime formatted for input[type=datetime-local]
     const now = new Date();
-    const tzOffset = -now.getTimezoneOffset();
     const localISO = new Date(now.getTime() - (now.getTimezoneOffset() * 60000)).toISOString().slice(0,16);
     return localISO; // yyyy-mm-ddThh:mm
   });
